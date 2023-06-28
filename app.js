@@ -56,3 +56,18 @@ if (numberOne < numberTwo){
     console.log("El número "+ numberTwo + " Es menor")
 }
 
+//6. Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. Considerar el caso en que 2 números sean iguales.
+
+let number_one = parseInt(prompt("Por favor ingrese el primer número: "));
+let number_two = parseInt(prompt("Ingrese el segundo número: "));
+let number_three = parseInt(prompt("Ingrese el tercer número: "));
+
+if (number_one > number_two && number_two > number_three){
+    console.log("El número "+ number_one + " Es mayor");
+}else if(number_two > number_one && number_one > number_three){
+    console.log("El número "+ number_two + " Es mayor");
+}else if(number_three > number_one && number_one > number_two){
+    console.log("El número "+ number_there + " Es mayor");
+}else if(number_one == number_two || number_two == number_three || number_three == number_one){
+    console.log("Los números son iguales");
+}
